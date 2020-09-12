@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { MujeresPageRoutingModule } from './mujeres-routing.module';
 
 import { MujeresPage } from './mujeres.page';
+import { ComponentesModule } from '../../componentes/componentes.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MujeresPageRoutingModule
+    MujeresPageRoutingModule,
+    ComponentesModule
   ],
   declarations: [MujeresPage]
 })
