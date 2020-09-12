@@ -6,7 +6,23 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },  {
+    path: 'mujeres',
+    loadChildren: () => import('./mujeres/mujeres.module').then( m => m.MujeresPageModule)
+  },
+  {
+    path: 'hombres',
+    loadChildren: () => import('./hombres/hombres.module').then( m => m.HombresPageModule)
+  },
+  {
+    path: 'kid',
+    loadChildren: () => import('./kid/kid.module').then( m => m.KidPageModule)
+  },
+  {
+    path: 'otros',
+    loadChildren: () => import('./otros/otros.module').then( m => m.OtrosPageModule)
   }
+
 ];
 
 @NgModule({
