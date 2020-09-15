@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'otros',
     loadChildren: () => import('./otros/otros.module').then( m => m.OtrosPageModule)
+  },  {
+    path: 'carrito',
+    loadChildren: () => import('./carrito/carrito.module').then( m => m.CarritoPageModule)
   }
+
 
 ];
 
