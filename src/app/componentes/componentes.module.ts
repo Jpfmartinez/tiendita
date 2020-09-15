@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { IonicModule } from '@ionic/angular';
+import { CarritoPageRoutingModule } from '../home/carrito/carrito-routing.module';
+
+
 
 
 
@@ -14,7 +17,10 @@ import { IonicModule } from '@ionic/angular';
   ],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    CarritoPageRoutingModule
+   
+   
   ]
 })
 export class ComponentesModule { }
